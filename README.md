@@ -15,8 +15,14 @@
  - [ ] List Comprehension
  - [ ] Dictionary Comprehension
  - [ ] Dunder methods
+ - [ ] Methods vs Functions
  - [ ] Type casting
  - [ ] Writing/Reading files
+
+ - [ ] Networking
+    - [ ] pubnub channel communication
+    - [ ] request Lib
+    - [ ] sockets
 
  - [ ] Easter Eggs
     - [ ] import this
@@ -33,14 +39,20 @@
      - [ ] MP multiprocessing
      - [ ] MANIM ?!??!?!?!
 
- - [ ] Advancd libs - [ ] Numby / Matplot
+ - [ ] Advancd libs
+    - [ ] tkinter GUI
+    - [ ] qt GUI
+    - [ ] Selinium QA automation
+    - [ ] Textual TUI lib
+    - [ ] pillow "PIL" images
+    - [ ] numpy / pandas / Matplot
     - [ ] sqlite
     - [ ] pyqt
-    - [ ] tkinter - [ ] GUI
-    - [ ] qt - [ ] GUI
-    - [ ] Selinium - [ ] QA automation
+    - [ ] tkinter GUI
+    - [ ] qt GUI
+    - [ ] Selinium QA automation
     - [ ] Pygame
-        - [ ] simple games like hman
+    - [ ] simple games like hman
     - [ ] flask
     - [ ] FastAPI
     - [ ] uvicorn
