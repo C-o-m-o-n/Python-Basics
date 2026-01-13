@@ -3,12 +3,22 @@
  - [x] Literals
  - [x] Variables
  - [x] Flow control (if/elif/else)
+ - [ ] Bypass indentation
  - [ ] Loops (while/for loops)
+ - [ ] Indentation 🐍
+ - [ ] Type annotations 🐍
  - [ ] Array
+ - [ ] Kwargs
  - [ ] F Strings
  - [ ] Objects
  - [ ] Classes
- - [ ] Operators + - / * % ^
+ - [ ] Ternary Operators - ~ 
+ - [ ] Unarry Operators - ~ 
+ - [ ] Comparison Operators == < > <= >=
+ - [ ] Math Operators + - / * % ^
+ - [ ] Logic Operators (and &&, or ||, xor ^)
+ - [ ] Shrot circuts and / or
+ - [ ] Bitwise Operators + - / * % ^
  - [ ] Inheritance
  - [ ] Map/Rudce
  - [ ] Binary manipulation
@@ -16,10 +26,11 @@
  - [ ] Cloujre
  - [ ] List Comprehension
  - [ ] Dictionary Comprehension
- - [ ] Dunder methods
+ - [ ] Dunder methods ("Magic Methods")
  - [ ] Methods vs Functions
  - [ ] Type casting
  - [ ] Writing/Reading files
+ - [ ] Scopes
 
  - [ ] Networking
     - [ ] pubnub channel communication
@@ -40,6 +51,7 @@
      - [ ] subprocess
      - [ ] MP multiprocessing
      - [ ] MANIM ?!??!?!?!
+     - [ ] Reflex Lib
 
  - [ ] Advancd libs
      - [ ] Coroutines
