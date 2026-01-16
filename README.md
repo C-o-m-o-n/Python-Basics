@@ -17,6 +17,7 @@ vim - stock vim
  - [x] Array Slices
  - [x] Dictionaries / Objects
  - [x] KWargs
+ - [x] Dunder methods ("Magic Methods __str__ __init__")
  - [ ] Classes
  - [ ] Inheritance
  - [ ] Unarry Operators - ~ 
@@ -31,7 +32,6 @@ vim - stock vim
  - [ ] Cloujre
  - [ ] List Comprehension
  - [ ] Dictionary Comprehension
- - [ ] Dunder methods ("Magic Methods")
  - [ ] Methods vs Functions
  - [ ] Type casting
  - [ ] Writing/Reading files

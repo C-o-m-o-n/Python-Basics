@@ -12,8 +12,9 @@ print("\nAdd all")
 print(addAll(1,2,3,4,5,6))
 
 ## Create Dictionary
-def createDictionary(**happy):
-    return happy
+createDictionary(o=1,t=2,f=4)
+def createDictionary(**kwargs):
+    return kwargs
     #return {**happy}
 
 print("\nCreate Dictionary")
