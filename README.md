@@ -23,7 +23,7 @@ vim - stock vim
  - [x] Unarry Operators - + ~ * ** not(!) del
  - [x] Comparison Operators == < > <= >=
  - [x] Math Operators + - / * % ^
- - [ ] Logic Operators (and &&, or ||, xor ^)
+ - [x] Logic Operators (and &&, or ||, xor ^)
  - [ ] Short circuts and / or
  - [ ] Bitwise Operators + - / * % ^
  - [ ] Binary manipulation
@@ -48,12 +48,17 @@ vim - stock vim
     - [ ] import antigravity
     - [ ] from __future__ import braces
 
+ - [ ]
+    - [ ] try / except
+    - [ ] finally
+    - [ ] template strings
  - [ ] Common libs
      - [ ] os, math, regex
      - [ ] Time
      - [ ] Request Lib
      - [ ] path lib
      - [ ] subprocess
+     - [ ] Threads
      - [ ] MP multiprocessing
      - [ ] MANIM ?!??!?!?!
      - [ ] Reflex Lib
