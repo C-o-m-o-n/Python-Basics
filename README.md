@@ -24,9 +24,8 @@ vim - stock vim
  - [x] Comparison Operators == < > <= >=
  - [x] Math Operators + - / * % ^
  - [x] Logic Operators (and &&, or ||, xor ^)
- - [ ] Short circuts and / or
- - [ ] Bitwise Operators + - / * % ^
- - [ ] Binary manipulation
+ - [x] Short circuts and / or
+ - [ ] Bit Shifting
  - [ ] Map/Rudce
  - [ ] Lambda / Functional / Closures
  - [ ] Cloujre

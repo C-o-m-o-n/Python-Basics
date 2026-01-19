@@ -1,9 +1,5 @@
-import time
-a = True and False
-b = True or  False
+a = True and "🎉"
+b = False or "🙌"
 
-
-"regular string"
-f"{time.time()}"
 print(f"{a=}")
 print(f"{b=}")
