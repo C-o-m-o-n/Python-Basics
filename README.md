@@ -25,13 +25,13 @@ vim - stock vim
  - [x] Math Operators + - / * % ^
  - [x] Logic Operators (and &&, or ||, xor ^)
  - [x] Short circuts and / or
- - [ ] Bit Shifting
+ - [x] Bit Shifting
+ - [x] Methods vs Functions
  - [ ] Map/Rudce
  - [ ] Lambda / Functional / Closures
  - [ ] Cloujre
  - [ ] List Comprehension
  - [ ] Dictionary Comprehension
- - [ ] Methods vs Functions
  - [ ] Type casting
  - [ ] Writing/Reading files
  - [ ] Scopes
