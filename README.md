@@ -29,6 +29,7 @@ vim - stock vim
  - [x] Methods vs Functions
  - [ ] Map/Rudce
  - [ ] Lambda / Functional / Closures
+ - [ ] functools
  - [ ] Cloujre
  - [ ] List Comprehension
  - [ ] Dictionary Comprehension
