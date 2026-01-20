@@ -45,9 +45,9 @@ vim - stock vim
  - [x] Closures
  - [x] @Decorators
  - [ ] Lambda / Functional / Closures
- - [ ] functools
  - [ ] List Comprehension
  - [ ] Dictionary Comprehension
+ - [ ] functools
  - [ ] Type casting
  - [ ] Writing/Reading files
  - [ ] Scopes
