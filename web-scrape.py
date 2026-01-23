@@ -80,9 +80,10 @@ async def main():
     pages = queue.Queue()
 
     ## Check Command line user input for root URL
-    if len(sys.argv) < 1:
+    if len(sys.argv) < 2:
         cmd = sys.argv[0]
         print('Usage Instructions:\n')
+        print('\t                     the root url to start')
         print(f'\tpython {cmd} https://www.pubnub.com/\n\n')
         return
 
