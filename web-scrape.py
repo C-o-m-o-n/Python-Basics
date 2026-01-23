@@ -1,3 +1,19 @@
+
+
+## HOW TO AVOID BOT DETECTION
+## 1. use a RESIDENTIAL IP ADDRESS ( HOME ADDRESS )
+## 2. use a well known USER AGENET string
+## The plan for today
+## We are only scraping TEXT from HTML today
+## We are only scraping TEXT from HTML today
+## We are only scraping TEXT from HTML today
+
+## Things we won't do, but would make it way better for web scraping
+##  - Not JavaScript
+##  - Not CSS
+##  - Not Images
+##  - Maybe PDFs
+##
 ## How to get ***AI TRAINING DATA***
 ## How to get ***AI TRAINING DATA***
 ## Web Scraping with Python
@@ -7,22 +23,77 @@
 ## fetch then parse for <a> anchor tags
 
 
+## TODO PDF READER
 import sys
+import time
 import queue
 import requests
 #import threading
 import asyncio
 
+## URL Fetcher Worker
+def url_fetch_worker(urls: Queue, pages: Queue):
+    user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36'
+    headers = {'User-Agent': user_agent}
+    ## TODO
+    ## TODO
+    completedUrls = {}
+    ## TODO
+    ## TODO
+    while True:
+        if urls.empty():
+            print("no urls, sleeping for 1 second")
+            time.sleep(1)
+            continue
+        url = urls.get()
+        try:
+            response = requests.get(
+                url,
+                headers=headers,
+                timeout=10
+            )
+            pages.put(response.text)
+            print(f'Captured Successfully {url}')
+        except Exception as e:
+            print(f'Failed to get URL: {url}')
+            print(e)
+        finally:
+            pass
+    
+    return "done"
 
-## List of URLS we need to fetch
-urls = queue.Queue()
-
-## HTML pages ready for parse
-pages = queue.Queue()
+## HTML Parser
+def html_parser_worker(urls: Queue, pages: Queue):
+    while True:
+        if pages.empty():
+            print('no pages, sleeping for 1 second')
+            time.sleep(1)
+            continue
+        page = pages.get()
+        print(page)
 
 async def main():
+    ## List of URLS we need to fetch
+    urls = queue.Queue()
+
+    ## HTML pages ready for parse
+    pages = queue.Queue()
+
+    ## Check Command line user input for root URL
+    if len(sys.argv) < 1:
+        cmd = sys.argv[0]
+        print('Usage Instructions:\n')
+        print(f'\tpython {cmd} https://www.pubnub.com/\n\n')
+        return
+
     rootUrl = sys.argv[1]
     urls.put(rootUrl)
-    print(f'{rootUrl=}')
+    print(f'Root url starting at: "{rootUrl=}"')
+
+    results = await asyncio.gather(
+        asyncio.to_thread(html_parser_worker, urls, pages),
+        asyncio.to_thread(url_fetch_worker, urls, pages),
+    )
+    print(result)
 
 asyncio.run(main())
