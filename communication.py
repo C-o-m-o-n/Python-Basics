@@ -10,10 +10,18 @@ import threading
 publishKey = 'demo'
 subscribeKey = 'demo'
 
+# flag to help with graceful shutdown
+running = True
+
+## update running flag
+def update_running(value: bool):
+    global running
+    running = value
+
 ## Connect To a Channel
 def stream(channel: str, callback):
     tt = '0'
-    while True:
+    while running:
         receive_url = f'https://ps.pndsn.com/subscribe/{subscribeKey}/{channel}/0/{tt}'
         try:
             response = requests.get(receive_url)
@@ -34,8 +42,8 @@ def startStream(channel: str, callback):
     thread.start()
     return thread
 
-def send(channel: str, message: str):
-    send_url = f'https://ps.pndsn.com/publish/{publishKey}/{subscribeKey}/0/{channel}/0/{json.dumps(message)}'
+def send(channel: str, payload: dict):
+    send_url = f'https://ps.pndsn.com/publish/{publishKey}/{subscribeKey}/0/{channel}/0/{json.dumps(payload)}'
     try:
         response = requests.get(send_url)
         return response.json()
