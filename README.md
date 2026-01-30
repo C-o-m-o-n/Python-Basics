@@ -11,7 +11,6 @@ Scala, Clojur
 Erlang
 Kotlin
 
-
 ## My Setup
 Ghostty - terminal emulator
 Tmux - window pane manager inside Ghostty
@@ -23,6 +22,8 @@ vim - stock vim
  scikit
  pytorch
  matplotlib
+ keras tensorflow
+
  - [x] Literals
  - [x] Variables
  - [x] Flow control (if/elif/else)
@@ -54,6 +55,7 @@ vim - stock vim
  - [x] Double Linked List sorted binary tree!????
  - [x] List Comprehension
  - [x] Dictionary Comprehension
+ - [ ] rich library for pretty colors ( Janlu )
  - [ ] functools
  - [ ] Type casting
  - [ ] Writing/Reading files
@@ -112,9 +114,9 @@ vim - stock vim
 
  - [ ] AI 
      - [ ] Huggingface Pipeslines
-     - [ ] Pytorch tensor/matrix
+     - [ ] Pytorch tensor/matrix manipulations
      - [ ] Computer vision
 
  - [ ] End project to wrap up the series
-    - [ ] Web scraping for AI training
+    - [x] Web scraping for AI training
     - [ ] GemmaFunction / Gemini automate a business function
